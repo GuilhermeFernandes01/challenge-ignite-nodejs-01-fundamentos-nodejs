@@ -1,0 +1,21 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "description": "Challenge Ignite NodeJS 01: Fundamentos do NodeJS",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "ingestCsvFile": "node src/csv/ingest-csv-file.js"
+  },
+  "keywords": [],
+  "author": "Guilherme Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.3.10"
+  }
+}
