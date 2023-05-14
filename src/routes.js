@@ -9,7 +9,7 @@ export const routes = [
         method: 'GET',
         path: buildRoutePath('/tasks'),
         handler: (req, res) => {
-            const { search } = req.query
+            const search = req.query?.search?.replaceAll('%20', ' ')
 
             const tasks = database.select('tasks', search ? {
                 title: search,

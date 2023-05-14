@@ -23,6 +23,7 @@ export class Database {
         if (!this.#database[table]) {
             return []
         }
+
         const data = search
             ? this.#database[table]
                 .filter(row => Object.entries(search)
